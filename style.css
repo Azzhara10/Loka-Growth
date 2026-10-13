@@ -1,0 +1,59 @@
+/* Custom Animations and Styling for Loka Growth */
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes floatDelayed {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+}
+
+@keyframes bounceSlow {
+    0%, 100% {
+        transform: translateY(-5%);
+        animation-timing-function: cubic-bezier(0.8,0,1,1);
+    }
+    50% {
+        transform: none;
+        animation-timing-function: cubic-bezier(0,0,0.2,1);
+    }
+}
+
+.animate-float {
+    animation: float 4s ease-in-out infinite;
+}
+
+.animate-float-delayed {
+    animation: floatDelayed 5s ease-in-out infinite;
+}
+
+.animate-bounce-slow {
+    animation: bounceSlow 3s infinite;
+}
+
+/* Navbar scroll effect state */
+#navbar.scrolled {
+    background-color: rgba(255, 255, 255, 0.95);
+    border-bottom-color: rgba(13, 132, 102, 0.2);
+    box-shadow: 0 10px 30px -10px rgba(7, 26, 45, 0.08);
+}
+
+/* Smooth scrolling and selection */
+html {
+    scroll-behavior: smooth;
+}
+
+::selection {
+    background-color: #0D8466;
+    color: #FFFFFF;
+}

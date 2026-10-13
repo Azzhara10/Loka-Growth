@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loka Growth</title>
+    <!-- Favicon Loka Growth -->
+        <link rel="icon" type="image/png" href="assets/images/Logo_loka_growth_bg.png">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: {
+                            DEFAULT: '#071A2D',
+                            dark: '#04101D',
+                            light: '#0A253E',
+                        },
+                        emerald: {
+                            DEFAULT: '#0D8466',
+                            light: '#10A37E',
+                            dark: '#095F4A',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts: Plus Jakarta Sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-white text-navy font-['Plus_Jakarta_Sans',sans-serif] antialiased overflow-x-hidden selection:bg-emerald selection:text-white">
+
+    <!-- Navbar -->
+    <header id="navbar" class="fixed top-0 left-0 w-full z-50 transition-all duration-300 py-4 px-6 md:px-12 bg-white/90 backdrop-blur-md border-b border-navy/10">
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
+            <!-- Logo -->
+            <a href="assets/images/Logo_loka_growth_bg.png" class="flex items-center gap-3 group">
+                <img src="assets/images/Logo_loka_growth_bg.png" alt="Logo Loka Growth" class="w-10 h-10 object-contain rounded-xl">
+                <div class="flex flex-col">
+                    <span class="text-xl font-extrabold tracking-tight text-navy">LOKA<span class="text-emerald">GROWTH</span></span>
+                    <span class="text-[10px] uppercase tracking-widest text-navy/60 font-semibold">Digital Agency</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Links -->
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-navy/80">
+                <a href="#beranda" class="hover:text-emerald transition-colors">Beranda</a>
+                <a href="#tentang" class="hover:text-emerald transition-colors">Tentang Kami</a>
+                <a href="#layanan" class="hover:text-emerald transition-colors">Layanan</a>
+                <a href="#harga" class="hover:text-emerald transition-colors">Harga Paket</a>
+                <a href="#kontak" class="hover:text-emerald transition-colors">Kontak</a>
+            </nav>
+
+            <!-- CTA Button -->
+            <div class="hidden md:block">
+                <a href="https://wa.me/6288804153864?text=Halo%20Loka%20Growth,%20saya%20ingin%20berkonsultasi%20mengenai%20bisnis%20saya." target="_blank" class="px-5 py-2.5 rounded-xl bg-emerald text-white text-sm font-semibold hover:bg-emerald-light transition-all duration-300 shadow-lg shadow-emerald/20 flex items-center gap-2">
+                    <i class="fa-brands fa-whatsapp text-base"></i>
+                    Hubungi Kami
+                </a>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button id="menu-btn" class="md:hidden text-navy text-2xl focus:outline-none">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden absolute top-full left-0 w-full bg-white border-b border-navy/10 py-6 px-6 flex flex-col gap-4 shadow-2xl">
+            <a href="#beranda" class="mobile-link text-navy/80 hover:text-emerald font-medium text-base">Beranda</a>
+            <a href="#tentang" class="mobile-link text-navy/80 hover:text-emerald font-medium text-base">Tentang Kami</a>
+            <a href="#layanan" class="mobile-link text-navy/80 hover:text-emerald font-medium text-base">Layanan</a>
+            <a href="#harga" class="mobile-link text-navy/80 hover:text-emerald font-medium text-base">Harga Paket</a>
+            <a href="#kontak" class="mobile-link text-navy/80 hover:text-emerald font-medium text-base">Kontak</a>
+            <a href="https://wa.me/6288804153864?text=Halo%20Loka%20Growth,%20saya%20ingin%20berkonsultasi%20mengenai%20bisnis%20saya." target="_blank" class="mt-2 w-full py-3 rounded-xl bg-emerald text-white text-center font-semibold flex items-center justify-center gap-2">
+                <i class="fa-brands fa-whatsapp"></i> Hubungi Kami
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section (Teks baru sesuai permintaan) -->
+    <section id="beranda" class="relative min-h-screen flex items-center pt-32 pb-20 px-6 md:px-12 bg-navy text-white overflow-hidden">
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-emerald/10 rounded-full blur-[120px] pointer-events-none"></div>
+        <div class="absolute inset-0 bg-[linear-gradient(to_right,#0D846608_1px,transparent_1px),linear-gradient(to_bottom,#0D846608_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_50%,#000_70%,transparent_100%)] pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10">
+            <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-emerald/10 border border-emerald/30 text-emerald text-xs font-semibold uppercase tracking-wider animate-bounce-slow">
+                    <span class="w-2 h-2 rounded-full bg-emerald"></span>
+                    Digital Marketing Agency
+                </div>
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight text-white">
+                    DIGITAL MARKETING <span class="text-emerald block mt-2">AGENCY</span>
+                </h1>
+                <p class="text-lg text-white/80 max-w-2xl mx-auto lg:mx-0 font-light leading-relaxed">
+                    Loka Growth membantu UMKM bidang edukasi, teknologi, dan analisis data memperluas jangkauan dan menjangkau audiens yang tepat melalui strategi pemasaran digital.
+                </p>
+                <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
+                    <a href="#harga" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-emerald text-white font-semibold hover:bg-emerald-light transition-all duration-300 shadow-xl shadow-emerald/30 flex items-center justify-center gap-3 group">
+                        <span>Lihat Paket Layanan</span>
+                        <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+                    </a>
+                    <a href="#tentang" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-white/10 border border-white/20 text-white font-semibold hover:bg-white/20 transition-all duration-300 flex items-center justify-center gap-2">
+                        <span>Tentang Kami</span>
+                        <i class="fa-solid fa-chevron-down text-xs"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="lg:col-span-5 relative">
+                <div class="relative w-full aspect-square max-w-md mx-auto flex items-center justify-center">
+                    <div class="w-64 h-64 rounded-full bg-gradient-to-tr from-navy-light to-emerald/40 border border-emerald/30 absolute shadow-2xl animate-pulse"></div>
+                    <div class="absolute -top-4 left-4 bg-navy-light/90 backdrop-blur-md border border-emerald/30 p-4 rounded-2xl shadow-xl flex items-center gap-3 animate-float">
+                        <div class="w-12 h-12 rounded-xl bg-emerald/20 flex items-center justify-center text-emerald text-xl">
+                            <i class="fa-solid fa-bullhorn"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs text-white/70">Campaign Ready</p>
+                            <h4 class="text-sm font-bold text-white">Targeted Strategy</h4>
+                        </div>
+                    </div>
+                    <div class="absolute bottom-6 -right-4 bg-navy-light/90 backdrop-blur-md border border-emerald/30 p-4 rounded-2xl shadow-xl flex items-center gap-3 animate-float-delayed">
+                        <div class="w-12 h-12 rounded-xl bg-emerald/20 flex items-center justify-center text-emerald text-xl">
+                            <i class="fa-solid fa-chart-pie"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs text-white/70">Content Creation</p>
+                            <h4 class="text-sm font-bold text-white">High Quality Design</h4>
+                        </div>
+                    </div>
+                    <div class="absolute bg-navy/95 backdrop-blur-xl border border-emerald/50 p-6 rounded-3xl shadow-2xl text-center z-20">
+                        <div class="w-14 h-14 rounded-2xl bg-emerald text-white flex items-center justify-center text-2xl mx-auto mb-3 shadow-lg shadow-emerald/30">
+                            <i class="fa-solid fa-rocket"></i>
+                        </div>
+                        <h3 class="font-bold text-white text-base">Loka Growth</h3>
+                        <p class="text-xs text-white/70 mt-1">Creative Agency</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tentang Loka Growth -->
+    <section id="tentang" class="py-24 px-6 md:px-12 bg-white relative">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <div class="lg:col-span-6 space-y-6">
+                <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-emerald/10 border border-emerald/20 text-emerald text-xs font-semibold uppercase tracking-wider">
+                    Tentang Loka Growth
+                </div>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-navy leading-tight">
+                    Mitra Profesional untuk Pertumbuhan Bisnis Anda
+                </h2>
+                <p class="text-navy/70 leading-relaxed text-base">
+                    Loka Growth adalah agensi pemasaran digital yang membantu UMKM bidang edukasi, teknologi, dan analisis data memperkenalkan produk dan layanan mereka kepada audiens yang lebih luas. Kami mengembangkan strategi melalui media sosial, konten, dan kampanye digital untuk meningkatkan visibilitas serta menjangkau target audiens yang tepat.
+                </p>
+                <div class="space-y-4 pt-2">
+                    <div class="flex items-start gap-3">
+                        <div class="w-6 h-6 rounded-full bg-emerald/10 text-emerald flex items-center justify-center mt-1"><i class="fa-solid fa-check text-xs"></i></div>
+                        <div>
+                            <h4 class="font-bold text-navy text-sm">Pendekatan Kreatif & Berbasis Strategi</h4>
+                            <p class="text-xs text-navy/70 mt-0.5">Memastikan setiap kampanye dan konten selaras dengan tujuan bisnis Anda.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <div class="w-6 h-6 rounded-full bg-emerald/10 text-emerald flex items-center justify-center mt-1"><i class="fa-solid fa-check text-xs"></i></div>
+                        <div>
+                            <h4 class="font-bold text-navy text-sm">Transparansi & Komitmen</h4>
+                            <p class="text-xs text-navy/70 mt-0.5">Layanan profesional tanpa biaya tersembunyi dengan komunikasi yang transparan.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lg:col-span-6 grid grid-cols-2 gap-4">
+                <div class="p-8 rounded-3xl bg-slate-50 border border-slate-200 text-center space-y-3 shadow-sm hover:border-emerald transition-all duration-300">
+                    <div class="w-12 h-12 rounded-2xl bg-emerald/10 text-emerald flex items-center justify-center text-xl mx-auto">
+                        <i class="fa-solid fa-bullhorn"></i>
+                    </div>
+                    <h3 class="font-bold text-navy">Social Media</h3>
+                    <p class="text-xs text-navy/70">Pengelolaan akun terstruktur dan konsisten.</p>
+                </div>
+                <div class="p-8 rounded-3xl bg-navy text-white text-center space-y-3 shadow-xl pt-10">
+                    <div class="w-12 h-12 rounded-2xl bg-emerald text-white flex items-center justify-center text-xl mx-auto shadow-md">
+                        <i class="fa-solid fa-pen-nib"></i>
+                    </div>
+                    <h3 class="font-bold text-white">Content Creation</h3>
+                    <p class="text-xs text-white/80">Desain visual konten memukau.</p>
+                </div>
+                <div class="p-8 rounded-3xl bg-navy text-white text-center space-y-3 shadow-xl">
+                    <div class="w-12 h-12 rounded-2xl bg-emerald text-white flex items-center justify-center text-xl mx-auto shadow-md">
+                        <i class="fa-solid fa-bullseye"></i>
+                    </div>
+                    <h3 class="font-bold text-white">Digital Campaign</h3>
+                    <p class="text-xs text-white/80">Strategi kampanye berfokus konversi.</p>
+                </div>
+                <div class="p-8 rounded-3xl bg-slate-50 border border-slate-200 text-center space-y-3 shadow-sm hover:border-emerald transition-all duration-300">
+                    <div class="w-12 h-12 rounded-2xl bg-emerald/10 text-emerald flex items-center justify-center text-xl mx-auto">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+                    <h3 class="font-bold text-navy">Business Growth</h3>
+                    <p class="text-xs text-navy/70">Akselerasi pertumbuhan digital brand.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Layanan Kami -->
+    <section id="layanan" class="py-24 px-6 md:px-12 bg-slate-50 relative">
+        <div class="max-w-7xl mx-auto space-y-16">
+            <div class="text-center max-w-2xl mx-auto space-y-4">
+                <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-emerald/10 border border-emerald/20 text-emerald text-xs font-semibold uppercase tracking-wider">
+                    Layanan Kami
+                </div>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-navy">
+                    Tiga Pilar Layanan Utama Loka Growth
+                </h2>
+                <p class="text-navy/70 text-sm">
+                    Dirancang khusus untuk memenuhi kebutuhan pemasaran digital bisnis Anda secara menyeluruh.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Layanan 1 -->
+                <div class="p-8 rounded-3xl bg-white border border-slate-200 hover:border-emerald transition-all duration-300 flex flex-col justify-between group shadow-lg shadow-slate-100">
+                    <div class="space-y-6">
+                        <div class="w-16 h-16 rounded-2xl bg-emerald/10 border border-emerald/30 text-emerald flex items-center justify-center text-2xl group-hover:bg-emerald group-hover:text-white transition-all duration-300">
+                            <i class="fa-solid fa-share-nodes"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-navy">Social Media Management</h3>
+                        <p class="text-navy/70 text-sm leading-relaxed">
+                            Pengelolaan akun media sosial secara menyeluruh untuk membangun interaksi, meningkatkan kesadaran merek, dan menjaga konsistensi kehadiran online bisnis Anda.
+                        </p>
+                    </div>
+                    <div class="pt-8">
+                        <a href="#harga" class="text-emerald text-sm font-semibold flex items-center gap-2 group-hover:underline">
+                            <span>Lihat Detail Harga</span>
+                            <i class="fa-solid fa-arrow-right text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Layanan 2 -->
+                <div class="p-8 rounded-3xl bg-white border border-slate-200 hover:border-emerald transition-all duration-300 flex flex-col justify-between group shadow-lg shadow-slate-100">
+                    <div class="space-y-6">
+                        <div class="w-16 h-16 rounded-2xl bg-emerald/10 border border-emerald/30 text-emerald flex items-center justify-center text-2xl group-hover:bg-emerald group-hover:text-white transition-all duration-300">
+                            <i class="fa-solid fa-pen-nib"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-navy">Content Creation</h3>
+                        <p class="text-navy/70 text-sm leading-relaxed">
+                            Layanan Content Creation berfokus pada pembuatan desain konten visual, bukan pengelolaan akun. Kami menyajikan visual menarik yang sesuai dengan karakter brand Anda.
+                        </p>
+                    </div>
+                    <div class="pt-8">
+                        <a href="#harga" class="text-emerald text-sm font-semibold flex items-center gap-2 group-hover:underline">
+                            <span>Lihat Detail Harga</span>
+                            <i class="fa-solid fa-arrow-right text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Layanan 3 -->
+                <div class="p-8 rounded-3xl bg-white border border-slate-200 hover:border-emerald transition-all duration-300 flex flex-col justify-between group shadow-lg shadow-slate-100">
+                    <div class="space-y-6">
+                        <div class="w-16 h-16 rounded-2xl bg-emerald/10 border border-emerald/30 text-emerald flex items-center justify-center text-2xl group-hover:bg-emerald group-hover:text-white transition-all duration-300">
+                            <i class="fa-solid fa-bullseye"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-navy">Digital Campaign</h3>
+                        <p class="text-navy/70 text-sm leading-relaxed">
+                            Perencanaan dan eksekusi kampanye digital terarah untuk mencapai tujuan spesifik pemasaran Anda. Catatan: Biaya iklan berbayar tidak termasuk dalam harga paket.
+                        </p>
+                    </div>
+                    <div class="pt-8">
+                        <a href="#harga" class="text-emerald text-sm font-semibold flex items-center gap-2 group-hover:underline">
+                            <span>Lihat Detail Harga</span>
+                            <i class="fa-solid fa-arrow-right text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Harga Paket Section -->
+    <section id="harga" class="py-24 px-6 md:px-12 bg-white relative">
+        <div class="max-w-7xl mx-auto space-y-16">
+            <div class="text-center max-w-2xl mx-auto space-y-4">
+                <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-emerald/10 border border-emerald/20 text-emerald text-xs font-semibold uppercase tracking-wider">
+                    Daftar Harga Layanan
+                </div>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-navy">
+                    Pilih Paket Layanan Sesuai Kebutuhan
+                </h2>
+                <p class="text-navy/70 text-sm">
+                    Pilih kategori layanan di bawah ini untuk melihat rincian paket lengkap beserta harganya.
+                </p>
+
+                <!-- Category Switcher Tabs -->
+                <div class="flex flex-wrap justify-center gap-2 pt-6">
+                    <button onclick="switchTab('smm')" id="tab-smm" class="tab-btn px-6 py-3 rounded-xl text-sm font-semibold transition-all duration-300 bg-emerald text-white shadow-lg shadow-emerald/20">
+                        Social Media Management
+                    </button>
+                    <button onclick="switchTab('content')" id="tab-content" class="tab-btn px-6 py-3 rounded-xl text-sm font-semibold transition-all duration-300 bg-slate-100 text-navy/80 border border-slate-200 hover:border-emerald">
+                        Content Creation
+                    </button>
+                    <button onclick="switchTab('campaign')" id="tab-campaign" class="tab-btn px-6 py-3 rounded-xl text-sm font-semibold transition-all duration-300 bg-slate-100 text-navy/80 border border-slate-200 hover:border-emerald">
+                        Digital Campaign
+                    </button>
+                </div>
+            </div>
+
+            <!-- Pricing Container -->
+            <div id="pricing-container">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Basic -->
+                    <div class="p-8 rounded-3xl bg-slate-50 border border-slate-200 hover:border-emerald transition-all duration-300 flex flex-col justify-between shadow-md">
+                        <div class="space-y-6">
+                            <div>
+                                <span class="text-xs font-semibold text-emerald uppercase tracking-wider">Social Media Management</span>
+                                <h3 class="text-2xl font-bold text-navy mt-1">Basic</h3>
+                            </div>
+                            <div class="flex items-baseline gap-1">
+                                <span class="text-3xl font-extrabold text-navy">Rp150.000</span>
+                                <span class="text-xs text-navy/60">/bulan</span>
+                            </div>
+                            <ul class="space-y-3 text-sm text-navy/80">
+                                <li class="flex items-center gap-3"><i class="fa-solid fa-check text-emerald"></i> 4 Feed</li>
+                                <li class="flex items-center gap-3"><i class="fa-solid fa-check text-emerald"></i> 4 Story</li>
+                                <li class="flex items-center gap-3"><i class="fa-solid fa-check text-emerald"></i> Caption</li>
+                            </ul>
+                        </div>
+                        <div class="pt-8">
+                            <a href="https://wa.me/6288804153864?text=Halo%20Loka%20Growth,%20saya%20ingin%20memesan%20paket%20Social%20Media%20Management%20Basic%20-%20Rp150.000/bulan." target="_blank" class="w-full py-3.5 rounded-xl bg-emerald/10 border border-emerald/30 text-emerald font-semibold hover:bg-emerald hover:text-white transition-all duration-300 flex items-center justify-center gap-2">
+                                <i class="fa-brands fa-whatsapp"></i> Pilih Paket
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Standard -->
+                    <div class="p-8 rounded-3xl bg-slate-50 border-2 border-emerald relative flex flex-col justify-between shadow-xl shadow-emerald/5">
+                        <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full bg-emerald text-white text-xs font-bold uppercase tracking-wider shadow-md">
+                            Recommended
+                        </div>
+                        <div class="space-y-6">
+                            <div>
+                                <span class="text-xs font-semibold text-emerald uppercase tracking-wider">Social Media Management</span>
+                                <h3 class="text-2xl font-bold text-navy mt-1">Standard</h3>
+                            </div>
+                            <div class="flex items-baseline gap-1">
+                                <span class="text-3xl font-extrabold text-navy">Rp250.000</span>
+                                <span class="text-xs text-navy/60">/bulan</span>
+                            </div>
+                            <ul class="space-y-3 text-sm text-navy/80">
+                                <li class="flex items-center gap-3"><i class="fa-solid fa-check text-emerald"></i> 6 Feed</li>
+                                <li class="flex items-center gap-3"><i class="fa-solid fa-check text-emerald"></i> 4 Story</li>
+                                <li class="flex items-center gap-3"><i class="fa-solid fa-check text-emerald"></i> Kalender Konten</li>
+                            </ul>
+                        </div>
+                        <div class="pt-8">
+                            <a href="https://wa.me/6288804153864?text=Halo%20Loka%20Growth,%20saya%20ingin%20memesan%20paket%20Social%20Media%20Management%20Standard%20-%20Rp250.000/bulan." target="_blank" class="w-full py-3.5 rounded-xl bg-emerald text-white font-semibold hover:bg-emerald-light transition-all duration-300 flex items-center justify-center gap-2 shadow-lg shadow-emerald/20">
+                                <i class="fa-brands fa-whatsapp"></i> Pilih Paket
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Premium -->
+                    <div class="p-8 rounded-3xl bg-slate-50 border border-slate-200 hover:border-emerald transition-all duration-300 flex flex-col justify-between shadow-md">
+                        <div class="space-y-6">
+                            <div>
+                                <span class="text-xs font-semibold text-emerald uppercase tracking-wider">Social Media Management</span>
+                                <h3 class="text-2xl font-bold text-navy mt-1">Premium</h3>
+                            </div>
+                            <div class="flex items-baseline gap-1">
+                                <span class="text-3xl font-extrabold text-navy">Rp350.000</span>
+                                <span class="text-xs text-navy/60">/bulan</span>
+                            </div>
+                            <ul class="space-y-3 text-sm text-navy/80">
+                                <li class="flex items-center gap-3"><i class="fa-solid fa-check text-emerald"></i> 8 Feed</li>
+                                <li class="flex items-center gap-3"><i class="fa-solid fa-check text-emerald"></i> 6 Story</li>
+                                <li class="flex items-center gap-3"><i class="fa-solid fa-check text-emerald"></i> Evaluasi Sederhana</li>
+                            </ul>
+                        </div>
+                        <div class="pt-8">
+                            <a href="https://wa.me/6288804153864?text=Halo%20Loka%20Growth,%20saya%20ingin%20memesan%20paket%20Social%20Media%20Management%20Premium%20-%20Rp350.000/bulan." target="_blank" class="w-full py-3.5 rounded-xl bg-emerald/10 border border-emerald/30 text-emerald font-semibold hover:bg-emerald hover:text-white transition-all duration-300 flex items-center justify-center gap-2">
+                                <i class="fa-brands fa-whatsapp"></i> Pilih Paket
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontak & Footer -->
+    <footer id="kontak" class="bg-navy border-t border-emerald/20 pt-16 pb-12 px-6 md:px-12 text-white">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-12 pb-12 border-b border-white/10">
+            <div class="md:col-span-6 space-y-6">
+                <div class="flex items-center gap-3">
+                    <img src="assets/images/Logo_loka_growth_bg.png" alt="Logo Loka Growth" class="w-10 h-10 object-contain rounded-xl">
+                    <span class="text-xl font-extrabold tracking-tight text-white">LOKA<span class="text-emerald">GROWTH</span></span>
+                </div>
+                <p class="text-white/80 text-sm max-w-sm leading-relaxed">
+                    Membantu UMKM bidang edukasi, teknologi, dan analisis data mengembangkan kehadiran mereka di dunia digital.
+                </p>
+                <div class="flex items-center gap-3">
+                    <a href="https://wa.me/6288804153864" target="_blank" class="w-10 h-10 rounded-xl bg-navy-light border border-emerald/20 text-emerald flex items-center justify-center hover:bg-emerald hover:text-white transition-all duration-300">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    
+<a href="https://www.instagram.com/loka_growth/"
+   target="_blank"
+   rel="noopener noreferrer"
+   aria-label="Instagram Loka Growth"
+   class="w-10 h-10 rounded-xl bg-navy-light border border-emerald/20 text-emerald flex items-center justify-center hover:bg-emerald hover:text-white transition-all duration-300">
+    <i class="fa-brands fa-instagram"></i>
+</a>
+
+                </div>
+            </div>
+
+            <div class="md:col-span-3 space-y-4">
+                <h4 class="font-bold text-white text-sm uppercase tracking-wider">Navigasi</h4>
+                <ul class="space-y-2.5 text-sm text-white/80">
+                    <li><a href="#beranda" class="hover:text-emerald transition-colors">Beranda</a></li>
+                    <li><a href="#tentang" class="hover:text-emerald transition-colors">Tentang Kami</a></li>
+                    <li><a href="#layanan" class="hover:text-emerald transition-colors">Layanan</a></li>
+                    <li><a href="#harga" class="hover:text-emerald transition-colors">Harga Paket</a></li>
+                </ul>
+            </div>
+
+            <div class="md:col-span-3 space-y-4">
+                <h4 class="font-bold text-white text-sm uppercase tracking-wider">Hubungi Kami</h4>
+                <p class="text-sm text-white/80">Konsultasikan kebutuhan pemasaran digital bisnis Anda bersama Loka Growth.</p>
+                <a href="https://wa.me/6288804153864?text=Halo%20Loka%20Growth,%20saya%20ingin%20berkonsultasi." target="_blank" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-emerald text-white text-sm font-semibold hover:bg-emerald-light transition-all duration-300 shadow-lg shadow-emerald/20">
+                    <i class="fa-brands fa-whatsapp"></i> Chat WhatsApp
+                </a>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-white/60">
+            <p>&copy; 2026 Loka Growth. All rights reserved.</p>
+            <p class="mt-2 sm:mt-0">Digital Marketing Agency</p>
+        </div>
+    </footer>
+
+    <!-- External JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
