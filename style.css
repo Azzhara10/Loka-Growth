@@ -57,3 +57,200 @@ html {
     background-color: #0D8466;
     color: #FFFFFF;
 }
+
+
+
+/* =================================
+   PROJECT & COLLABORATION SECTION
+================================= */
+
+.collaboration-section {
+  padding: 90px 8%;
+  background: #f5f8fa;
+}
+
+.collaboration-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.collaboration-heading {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.collaboration-label {
+  color: #0d8466;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.collaboration-heading h2 {
+  color: #071a2d;
+  font-size: 34px;
+  margin: 12px 0;
+}
+
+.collaboration-heading p {
+  color: #64748b;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+.collaboration-card {
+  max-width: 750px;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 35px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(7, 26, 45, 0.06);
+}
+
+.collaboration-tag {
+  color: #0d8466;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.collaboration-info h3 {
+  color: #071a2d;
+  font-size: 25px;
+  margin: 15px 0 10px;
+}
+
+.collaboration-info p {
+  color: #64748b;
+  line-height: 1.8;
+  margin-bottom: 22px;
+}
+
+.collaboration-link {
+  display: inline-block;
+  color: #0d8466;
+  font-weight: 700;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.collaboration-link:hover {
+  color: #071a2d;
+  text-decoration: underline;
+}
+
+
+/* =================================
+   ARTICLE & INSIGHT SECTION
+================================= */
+
+.insight-section {
+  padding: 90px 8%;
+  background: #ffffff;
+}
+
+.insight-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.insight-heading {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.insight-label {
+  color: #0d8466;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.insight-heading h2 {
+  color: #071a2d;
+  font-size: 34px;
+  margin: 12px 0;
+}
+
+.insight-heading p {
+  color: #64748b;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+.insight-card {
+  max-width: 750px;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 35px;
+  background: #f5f8fa;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(7, 26, 45, 0.06);
+}
+
+.insight-tag {
+  color: #0d8466;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.insight-info h3 {
+  color: #071a2d;
+  font-size: 25px;
+  line-height: 1.4;
+  margin: 15px 0 10px;
+}
+
+.insight-info p {
+  color: #64748b;
+  line-height: 1.8;
+  margin-bottom: 22px;
+}
+
+.insight-link {
+  display: inline-block;
+  color: #0d8466;
+  font-weight: 700;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.insight-link:hover {
+  color: #071a2d;
+  text-decoration: underline;
+}
+
+
+/* =================================
+   RESPONSIVE
+================================= */
+
+@media (max-width: 600px) {
+  .collaboration-section,
+  .insight-section {
+    padding: 65px 6%;
+  }
+
+  .collaboration-heading h2,
+  .insight-heading h2 {
+    font-size: 27px;
+  }
+
+  .collaboration-card,
+  .insight-card {
+    padding: 25px;
+  }
+
+  .collaboration-info h3,
+  .insight-info h3 {
+    font-size: 21px;
+  }
+}
