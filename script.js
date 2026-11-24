@@ -274,3 +274,5 @@ function switchTab(category) {
     const activeBtn = document.getElementById(`tab-${category}`);
     activeBtn.className = "tab-btn px-6 py-3 rounded-xl text-sm font-semibold transition-all duration-300 bg-emerald text-white shadow-lg shadow-emerald/20";
 }
+
+

@@ -65,7 +65,7 @@ html {
 ================================= */
 
 .collaboration-section {
-  padding: 90px 8%;
+  padding: 40px 8%;
   background: #f5f8fa;
 }
 
@@ -144,23 +144,26 @@ html {
 }
 
 
+
 /* =================================
    ARTICLE & INSIGHT SECTION
 ================================= */
 
 .insight-section {
-  padding: 90px 8%;
+  padding: 48px 48px;
   background: #ffffff;
 }
 
 .insight-container {
-  max-width: 1100px;
+  max-width: 1280px;
+  width: 100%;
   margin: 0 auto;
 }
 
 .insight-heading {
   text-align: center;
-  margin-bottom: 40px;
+  max-width: 672px;
+  margin: 0 auto 40px;
 }
 
 .insight-label {
@@ -183,16 +186,30 @@ html {
   line-height: 1.7;
 }
 
+/* ARTICLE GRID */
+.insight-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 32px;
+}
+
+/* ARTICLE CARD */
 .insight-card {
-  max-width: 750px;
   width: 100%;
   box-sizing: border-box;
-  margin: 0 auto;
-  padding: 35px;
-  background: #f5f8fa;
+  padding: 32px;
+  background: #f8fafc;
   border: 1px solid #e2e8f0;
-  border-radius: 16px;
-  box-shadow: 0 8px 25px rgba(7, 26, 45, 0.06);
+  border-radius: 24px;
+  box-shadow: 0 4px 6px rgba(7, 26, 45, 0.05);
+  display: flex;
+  flex-direction: column;
+}
+
+.insight-info {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .insight-tag {
@@ -204,7 +221,7 @@ html {
 
 .insight-info h3 {
   color: #071a2d;
-  font-size: 25px;
+  font-size: 22px;
   line-height: 1.4;
   margin: 15px 0 10px;
 }
@@ -217,6 +234,7 @@ html {
 
 .insight-link {
   display: inline-block;
+  margin-top: auto;
   color: #0d8466;
   font-weight: 700;
   text-decoration: none;
@@ -228,29 +246,142 @@ html {
   text-decoration: underline;
 }
 
-
-/* =================================
-   RESPONSIVE
-================================= */
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .insight-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
 
 @media (max-width: 600px) {
-  .collaboration-section,
   .insight-section {
-    padding: 65px 6%;
+    padding: 40px 24px;
   }
 
-  .collaboration-heading h2,
-  .insight-heading h2 {
-    font-size: 27px;
+  .insight-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
   }
 
-  .collaboration-card,
   .insight-card {
-    padding: 25px;
+    padding: 28px;
   }
 
-  .collaboration-info h3,
-  .insight-info h3 {
-    font-size: 21px;
+  .insight-heading h2 {
+    font-size: 28px;
   }
+}
+
+
+
+/* PORTFOLIO SECTION */
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 28px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.portfolio-card {
+    display: block;
+    padding: 14px;
+    background: #f1f5f9;
+    border: 1px solid #e2e8f0;
+    border-radius: 18px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.portfolio-card:hover {
+    transform: translateY(-5px);
+    border-color: #0D8466;
+    box-shadow: 0 10px 25px rgba(7, 26, 45, 0.08);
+}
+
+.portfolio-image {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #e2e8f0;
+    border-radius: 12px;
+    overflow: hidden;
+    padding: 12px;
+}
+
+.portfolio-image img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    border-radius: 6px;
+    transition: transform 0.3s ease;
+}
+
+.portfolio-card:hover .portfolio-image img {
+    transform: scale(1.03);
+}
+
+.portfolio-caption {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 4px 2px;
+    color: #071A2D;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.portfolio-caption i {
+    color: #0D8466;
+    font-size: 18px;
+}
+
+@media (max-width: 768px) {
+    .portfolio-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
+    }
+
+    .portfolio-image {
+        height: 240px;
+    }
+}
+
+@media (max-width: 480px) {
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+        max-width: 320px;
+    }
+
+    .portfolio-image {
+        height: 300px;
+    }
+}
+
+
+/* ARTICLE GRID */
+.insight-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+}
+
+.insight-card {
+    height: 100%;
+}
+
+@media (max-width: 768px) {
+    .insight-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 520px) {
+    .insight-grid {
+        grid-template-columns: 1fr;
+    }
 }
